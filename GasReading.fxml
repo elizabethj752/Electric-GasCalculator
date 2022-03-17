@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="612.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GasReadingController">
+   <children>
+      <AnchorPane layoutY="14.0" prefHeight="255.0" prefWidth="612.0">
+         <children>
+            <Label layoutX="13.0" layoutY="7.0" prefHeight="42.0" prefWidth="309.0" style="-fx-background-color: #FAF9F6; -fx-background-color: ;" text=" Gas Reading for meter L78FW05633" textFill="#1e1d1d">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets right="5.0" />
+               </opaqueInsets>
+            </Label>
+            <AnchorPane layoutX="21.0" layoutY="76.0" prefHeight="94.0" prefWidth="86.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label fx:id="NightOutputLabel121" layoutX="33.0" layoutY="54.0" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: #FFFFA7;" text="E" textAlignment="CENTER" />
+                  <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="61.0" text="Read Type">
+                     <font>
+                        <Font name="Cambria Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="107.0" layoutY="76.0" prefHeight="94.0" prefWidth="133.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="104.0" text="Opening Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gasOpeningTextField" layoutX="7.0" layoutY="47.0" prefHeight="25.0" prefWidth="113.0" promptText="enter reading" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="240.0" layoutY="76.0" prefHeight="94.0" prefWidth="133.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <TextField fx:id="gasClosingTextField" layoutX="4.0" layoutY="47.0" prefHeight="25.0" prefWidth="113.0" promptText="enter reading" />
+                  <Label layoutX="10.0" layoutY="14.0" prefHeight="22.0" prefWidth="113.0" text="Closing Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="462.0" layoutY="76.0" prefHeight="94.0" prefWidth="127.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" prefHeight="18.0" prefWidth="59.0" style="-fx-background-color: #FFFFA7;" text="    m3" textFill="#080808e5">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m3outputLabel" layoutX="30.0" layoutY="55.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="366.0" layoutY="76.0" prefHeight="94.0" prefWidth="113.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="74.0" text="      Units">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UnitsoutputLabel" layoutX="20.0" layoutY="54.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="viewGasreading" layoutX="431.0" layoutY="180.0" mnemonicParsing="false" onAction="#viewGasReadingListener" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #fcc795;" text="Click here to view readings" textAlignment="CENTER" textFill="#1b1b1a">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4868420958518982" green="0.4561890959739685" blue="0.4102095663547516" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <AnchorPane layoutX="5.0" layoutY="214.0" prefHeight="51.0" prefWidth="597.0" style="-fx-background-color: #C0e6f0;">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" prefHeight="25.0" prefWidth="285.0" text="Total m3" textFill="#030303ee">
+                     <font>
+                        <Font name="Calisto MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalGasOutputLabel" layoutX="515.0" layoutY="6.0" prefHeight="25.0" prefWidth="82.0" />
+               </children>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.052799999713897705" green="0.6740926504135132" blue="0.8799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <Button fx:id="BactoHomePageGas" layoutX="462.0" layoutY="10.0" mnemonicParsing="false" onAction="#GasBacktoHomePagelistener" prefHeight="36.0" prefWidth="127.0" style="-fx-background-color: #d7e9ff;" text="Back to Home Page" textFill="#1a1b1b">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.752436637878418" green="0.8181936144828796" blue="0.8421052694320679" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="306.0" prefHeight="267.0" prefWidth="582.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="7.0" layoutY="11.0" prefHeight="72.0" prefWidth="173.0" style="-fx-background-color: white;" text="Gas Statement" textFill="#030303ee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewbillm3Label" layoutX="261.0" layoutY="14.0" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewbillKwhLabel" layoutX="335.0" layoutY="14.0" prefHeight="22.0" prefWidth="82.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewbillRateLabel" layoutX="413.0" layoutY="14.0" prefHeight="22.0" prefWidth="82.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewbillPriceLabel" layoutX="495.0" layoutY="14.0" prefHeight="22.0" prefWidth="82.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewBillm3OutputLabel" layoutX="261.0" layoutY="50.0" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewBillKwhOutputLabel" layoutX="335.0" layoutY="50.0" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewBillRateOutputLabel" layoutX="409.0" layoutY="50.0" prefHeight="22.0" prefWidth="82.0" style="-fx-background-color: white;" />
+            <Label fx:id="viewBillPriceOutputLabel" layoutX="487.0" layoutY="50.0" prefHeight="22.0" prefWidth="86.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="83.0" prefHeight="51.0" prefWidth="582.0" style="-fx-background-color: #C0e6f0;">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" prefHeight="25.0" prefWidth="173.0" text="Total usage charges" textFill="#030303ee">
+                     <font>
+                        <Font name="Calisto MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="viewbillGasUsageChargesOutputLabel" layoutX="486.0" layoutY="6.0" prefHeight="25.0" prefWidth="82.0" />
+               </children>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.049707602709531784" green="0.6975633502006531" blue="0.8947368264198303" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutY="144.0" prefHeight="36.0" prefWidth="582.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="viewBillVatOutputLabel" layoutX="486.0" layoutY="6.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label layoutX="7.0" layoutY="12.0" prefHeight="20.0" prefWidth="127.0" text="Plus Vat at 5%" textFill="#030303ee">
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="190.0" prefHeight="66.0" prefWidth="582.0" style="-fx-background-color: #C0e6f0;">
+               <children>
+                  <Label fx:id="viewBillFinalGasCharges" layoutX="486.0" layoutY="6.0" prefHeight="51.0" prefWidth="82.0" />
+                  <Label layoutX="14.0" layoutY="4.0" prefHeight="58.0" prefWidth="309.0" text="Your total new gas charges" textFill="#030303ee">
+                     <font>
+                        <Font name="Calisto MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.041423000395298004" green="0.5676332116127014" blue="0.8947368264198303" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="viewtotalbillGas" layoutX="226.0" layoutY="292.0" mnemonicParsing="false" onAction="#viewGasbilllistener" prefHeight="22.0" prefWidth="104.0" style="-fx-background-color: #ffff88;" text="View Total Bill" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationFormController">
+   <children>
+      <Label layoutX="21.0" layoutY="35.0" prefHeight="30.0" prefWidth="561.0" text="Provide us with your details and team will contact you shortly..." textAlignment="CENTER" textFill="#31d3c3">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="64.0" layoutY="88.0" prefHeight="201.0" prefWidth="473.0" style="-fx-background-color: #FFFFA7;">
+         <children>
+            <Label fx:id="name" layoutX="43.0" layoutY="46.0" prefHeight="42.0" prefWidth="132.0" text="Name" textFill="#0b91e5">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="contact" layoutX="43.0" layoutY="93.0" prefHeight="42.0" prefWidth="90.0" text="Contact No" textFill="#1493ee">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Entername" layoutX="162.0" layoutY="55.0" prefHeight="25.0" prefWidth="227.0" promptText="Enter your name" />
+            <TextField fx:id="entercontact" layoutX="162.0" layoutY="102.0" prefHeight="25.0" prefWidth="227.0" promptText="Enter your contact number" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="registerbtn" layoutX="64.0" layoutY="327.0" mnemonicParsing="false" onAction="#registerbtnListener" prefHeight="42.0" prefWidth="199.0" style="-fx-background-color: #40E0D0;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets top="-1.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="HomeButton" layoutX="323.0" layoutY="327.0" mnemonicParsing="false" onAction="#HomeButtonListener" prefHeight="42.0" prefWidth="199.0" style="-fx-background-color: #40E0D0;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets top="-1.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

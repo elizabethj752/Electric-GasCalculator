@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="765.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainScreenController">
+   <children>
+      <AnchorPane layoutX="8.0" prefHeight="319.0" prefWidth="754.0">
+         <children>
+            <AnchorPane layoutX="250.0" layoutY="46.0" prefHeight="94.0" prefWidth="146.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextField fx:id="NightOpeningReading" layoutX="4.0" layoutY="47.0" prefHeight="25.0" prefWidth="132.0" promptText="enter opening reading" />
+                  <Label layoutX="10.0" layoutY="14.0" prefHeight="22.0" prefWidth="113.0" text="Opening Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="34.0" layoutY="14.0" prefHeight="17.0" prefWidth="381.0" text="Electricity Reading for meter L78FW05633">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font></Label>
+            <AnchorPane layoutX="390.0" layoutY="46.0" prefHeight="94.0" prefWidth="146.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="104.0" text="Closing Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="NightClosingReading" layoutX="7.0" layoutY="47.0" prefHeight="25.0" prefWidth="127.0" promptText="enter closing reading" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="534.0" layoutY="46.0" prefHeight="94.0" prefWidth="127.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" prefHeight="18.0" prefWidth="59.0" style="-fx-background-color: #F0F8FF;" text="Kwh" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="NightOutputLabel" layoutX="18.0" layoutY="55.0" prefHeight="17.0" prefWidth="86.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="BackTOHomePage" layoutX="610.0" layoutY="9.0" mnemonicParsing="false" onAction="#BackTOHomePageButtonListener" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #9fe2eb;" text="Back to Home Page" textFill="#161717">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8157894611358643" green="0.7704678177833557" blue="0.7704678177833557" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <AnchorPane layoutX="119.0" layoutY="46.0" prefHeight="94.0" prefWidth="132.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label fx:id="NightOutputLabel1" layoutX="26.0" layoutY="56.0" prefHeight="17.0" prefWidth="76.0" style="-fx-background-color: #FFFFA7;" text="Night Rate" textAlignment="CENTER" />
+                  <Label layoutX="43.0" layoutY="14.0" prefHeight="20.0" prefWidth="59.0" text="Type">
+                     <font>
+                        <Font name="Cambria Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="536.0" layoutY="169.0" prefHeight="94.0" prefWidth="127.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label fx:id="DayOutputLabel1" layoutX="21.0" layoutY="47.0" prefHeight="17.0" prefWidth="86.0" style="-fx-background-color: white;" />
+                  <Label layoutX="41.0" layoutY="14.0" prefHeight="18.0" prefWidth="45.0" style="-fx-background-color: #F0F8FF;" text="Kwh" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="390.0" layoutY="169.0" prefHeight="94.0" prefWidth="146.0" style="-fx-background-color: #FFFFA7;" AnchorPane.leftAnchor="390.0">
+               <children>
+                  <TextField fx:id="DayClosingReading1" layoutX="7.0" layoutY="47.0" prefHeight="25.0" prefWidth="132.0" promptText="enter closing reading" />
+                  <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="104.0" text="Closing Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="169.0" prefHeight="94.0" prefWidth="139.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextField fx:id="DayOpeningReading1" layoutX="3.0" layoutY="47.0" prefHeight="25.0" prefWidth="132.0" promptText="enter opening reading" />
+                  <Label layoutX="10.0" layoutY="14.0" prefHeight="22.0" prefWidth="113.0" text="Opening Reading">
+                     <font>
+                        <Font name="Cambria Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="120.0" layoutY="169.0" prefHeight="94.0" prefWidth="132.0" style="-fx-background-color: #FFFFA7;">
+               <children>
+                  <Label layoutX="44.0" layoutY="14.0" prefHeight="17.0" prefWidth="45.0" text="Type ">
+                     <font>
+                        <Font name="Cambria Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="NightOutputLabel11" layoutX="29.0" layoutY="47.0" prefHeight="17.0" prefWidth="76.0" style="-fx-background-color: #FFFFA7;" text="Day Rate" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="38.0" layoutY="169.0" prefHeight="94.0" prefWidth="76.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="17.0" prefWidth="59.0" text="Register">
+                     <font>
+                        <Font name="Cambria Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="NightOutputLabel12" layoutX="33.0" layoutY="54.0" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: #F0F8FF;" text="02" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="viewreading" layoutX="677.0" layoutY="113.0" mnemonicParsing="false" onAction="#viewReadingListener" prefHeight="94.0" prefWidth="66.0" style="-fx-background-color: #fcc795;" text="Click &#10;here &#10;to &#10;view &#10;readings" textAlignment="CENTER" textFill="#2e2f2d">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.7171661853790283" blue="0.7171661853790283" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <AnchorPane layoutX="34.0" layoutY="46.0" prefHeight="94.0" prefWidth="86.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <Label fx:id="NightOutputLabel121" layoutX="33.0" layoutY="54.0" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: #F0F8FF;" text="01" textAlignment="CENTER" />
+                  <Label layoutX="16.0" layoutY="14.0" prefHeight="17.0" prefWidth="59.0" text="Register">
+                     <font>
+                        <Font name="Cambria Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="47.0" layoutY="274.0" prefHeight="36.0" prefWidth="624.0" style="-fx-background-color: #C0e6f0;">
+         <children>
+            <Label layoutX="8.0" layoutY="2.0" prefHeight="25.0" prefWidth="285.0" text="Total Units" textFill="#030303ee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="TotalOutputLabel" layoutX="529.0" layoutY="7.0" prefHeight="25.0" prefWidth="82.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="314.0" prefHeight="283.0" prefWidth="744.0">
+         <children>
+            <Button fx:id="viewtotalbill" layoutX="332.0" layoutY="7.0" mnemonicParsing="false" onAction="#viewbilllistener" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #ffff88;" text="View Total Bill">
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6842105388641357" green="0.6113547682762146" blue="0.6113547682762146" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <AnchorPane layoutX="11.0" layoutY="43.0" prefHeight="86.0" prefWidth="728.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="viewKwhLabel" layoutX="419.0" layoutY="6.0" prefHeight="18.0" prefWidth="104.0" style="-fx-background-color: white;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="viewBillTypeLabel" layoutX="353.0" layoutY="5.0" prefHeight="18.0" prefWidth="59.0" style="-fx-background-color: white;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="viewRateLabel" layoutX="527.0" layoutY="6.0" prefHeight="18.0" prefWidth="97.0" style="-fx-background-color: white;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="viewPriceLabel" layoutX="627.0" layoutY="6.0" prefHeight="18.0" prefWidth="97.0" style="-fx-background-color: white;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="viewNightRateLabel" layoutX="353.0" layoutY="29.0" prefHeight="22.0" prefWidth="76.0" style="-fx-background-color: white;" textAlignment="CENTER" />
+                  <Label fx:id="viewDayRateLabel" layoutX="350.0" layoutY="56.0" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: white;" textAlignment="CENTER" />
+                  <Label fx:id="viewbillOutputLabelKwhNight" layoutX="423.0" layoutY="29.0" prefHeight="22.0" prefWidth="104.0" style="-fx-background-color: white;" />
+                  <Label fx:id="viewbillOutputLabelRateNight" layoutX="531.0" layoutY="30.0" prefHeight="22.0" prefWidth="97.0" style="-fx-background-color: white;" />
+                  <Label fx:id="viewbillOutputLabelKwhDay" layoutX="423.0" layoutY="56.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: white;" />
+                  <Label fx:id="viewbillOutputLabelRateDay" layoutX="531.0" layoutY="56.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: white;" />
+                  <Label fx:id="viewbillOutputLabelPriceNight" layoutX="627.0" layoutY="28.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: white;" />
+                  <Label fx:id="viewbillOutputLabelPriceDay" layoutX="627.0" layoutY="56.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: white;" />
+                  <Label layoutX="12.0" layoutY="2.0" prefHeight="72.0" prefWidth="324.0" text="Electricity Statement" textFill="#030303ee">
+                     <font>
+                        <Font name="Calisto MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="12.0" layoutY="129.0" prefHeight="36.0" prefWidth="728.0" style="-fx-background-color: #C0e6f0;">
+               <children>
+                  <Label layoutX="8.0" layoutY="2.0" prefHeight="25.0" prefWidth="285.0" text="Total " textFill="#030303ee">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalOutputLabel1" layoutX="529.0" layoutY="7.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="viewBillTotalValue" layoutX="630.0" layoutY="9.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #C0e6f0;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="12.0" layoutY="212.0" prefHeight="64.0" prefWidth="728.0" style="-fx-background-color: #C0e6f0;">
+               <children>
+                  <Label layoutX="8.0" layoutY="2.0" prefHeight="58.0" prefWidth="381.0" text="Your total new electricty charges" textFill="#030303ee">
+                     <font>
+                        <Font name="Calisto MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalOutputLabel11" layoutX="529.0" layoutY="7.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="viewBillTotalElectricity" layoutX="622.0" layoutY="9.0" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: #C0e6f0;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="13.0" layoutY="163.0" prefHeight="64.0" prefWidth="728.0" style="-fx-background-color: ht;">
+               <children>
+                  <Label layoutY="20.0" prefHeight="17.0" prefWidth="285.0" text="Plus Vat at 5%" textFill="#030303ee">
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalOutputLabel2" layoutX="529.0" layoutY="7.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="viewBillTotalVat" layoutX="629.0" layoutY="19.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: white;" textFill="#191a1bba">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

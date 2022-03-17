@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SelectionPageController">
+   <children>
+      <Button layoutX="118.0" layoutY="152.0" mnemonicParsing="false" onAction="#electricityButtonListener" prefHeight="71.0" prefWidth="135.0" style="-fx-background-color: #faffb1;" text="Electricity &#10; Reading" textFill="#0a0a0a">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6842105388641357" green="0.614522397518158" blue="0.614522397518158" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="Century Schoolbook Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="118.0" layoutY="250.0" mnemonicParsing="false" onAction="#gasButtonListener" prefHeight="71.0" prefWidth="135.0" style="-fx-background-color: #bce3f2;" text="   Gas &#10;Reading" textFill="#101111">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7105262875556946" green="0.6315789222717285" blue="0.6315789222717285" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="Century Schoolbook" size="18.0" />
+         </font></Button>
+      <Label layoutX="92.0" layoutY="61.0" prefHeight="71.0" prefWidth="210.0" style="-fx-background-color: white;" text="   Please select an option">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutbutton" layoutX="197.0" layoutY="347.0" mnemonicParsing="false" onAction="#logoutbuttonListener" style="-fx-background-color: #f5c284;" text="LogOut" textFill="#141414">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.75" green="0.6701388955116272" blue="0.6701388955116272" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+   </children>
+</AnchorPane>
